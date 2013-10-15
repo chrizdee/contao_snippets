@@ -1,0 +1,19 @@
+<?php if($_GET['do']!='article'): ?>
+<div class="gallery">
+	<ul class="images">
+		<?php foreach (unserialize($this->elements['images']) as $image): ?>
+		<li>
+		<a href="<?php echo $this->getImage($image, false, 600, 'proportional'); ?>" data-lightbox="389c57">
+		<img src="<?php echo $this->getImage($image, false, 120, 'proportional'); ?>" alt="Bild Nr. <?php echo $i++; ?>">
+		</a>
+		</li>
+		<?php endforeach; ?>
+	</ul>	
+</div>
+<?php else: ?>
+<div class="gallery">
+		<?php foreach (unserialize($this->elements['images']) as $image): ?>
+		<span><img src="<?php echo $this->getImage($image, false, 70, 'proportional'); ?>" alt="Bild Nr. <?php echo $i++; ?>"></span>
+		<?php endforeach; ?>
+</div>
+<?php endif; ?>

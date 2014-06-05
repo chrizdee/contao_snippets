@@ -1,12 +1,13 @@
 <?php $url = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>
 
-<style type="text/css">
+<style>
 .like_toolbar { overflow: hidden; margin: 20px 0 30px 0; text-align: center; }
 .like_toolbar .button { display: inline-block; margin: 0 6px; }
 .like_toolbar .twitter.button { width: 95px; }
 .like_toolbar #___plusone_0 { width: 62px !important; }
 </style>
-
+	
+</style>
 <div class="like_toolbar">
 	<div class="facebook button">
 		<div id="fb-root"></div>
